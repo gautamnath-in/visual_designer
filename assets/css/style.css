@@ -1,0 +1,384 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 16px;
+    list-style-type: none
+}
+
+:focus {
+    outline: 0
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #111111;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.heading {
+    font-size: 50px;
+    margin: 70px 0 50px;
+    text-align: center
+}
+
+p {
+    line-height: 1.5
+}
+
+.hero-section {
+    color: #fff
+}
+
+.default-padding {
+    padding: 40px 70px 0
+}
+
+.default-padding-two {
+    padding: 40px 100px 0
+}
+
+navbar ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr)
+}
+
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us,
+.main-menu li {
+    font-size: 12px;
+}
+
+.main-menu li {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.main-menu li.has-child::after {
+    content: "▼";
+    padding-left: 8px;
+    position: relative;
+    right: 6px;
+    top: 2px;
+}
+
+.contact-us {
+    justify-self: flex-end;
+    padding: 10px 30px;
+    width: max-content;
+    background: #c91b28;
+}
+
+.contact-us a {
+    color: #fff;
+    font-weight: 500
+}
+
+.border-wrap {
+    display: grid;
+    align-items: center
+}
+
+.hero-welcome {
+    display: grid;
+    grid-template-columns: 2.5fr 4fr .2fr;
+    column-gap: 120px;
+    font-size: 60px
+}
+
+.welcome-title {
+    align-self: center
+}
+
+.welcome-title .intro {
+    color: #ff3343;
+}
+
+.welcome-title h1 {
+    font-size: 54px
+}
+
+.solution-title p,
+.welcome-title p {
+    margin: 40px 0
+}
+
+.welcome-title .newsletter {
+    padding: 10px 10px 10px 18px;
+    flex: 0 0 50%;
+    background: #fff
+}
+
+.audience .project-counter,
+.welcome-title .newsletter form {
+    display: flex;
+    justify-content: space-between
+}
+
+.welcome-title .newsletter input {
+    padding-left: 30px;
+    width: 75%
+}
+
+.welcome-title .newsletter button {
+    background-color: #8bb7a2;
+    color: #fff;
+    padding: 18px 34px
+}
+
+
+.welcome-banner img {
+    height: 500px;
+    object-fit: cover
+}
+
+.about-me {
+    position: relative;
+}
+
+.about-me::before {
+    background: #181818;
+    height: 100%;
+    content: '';
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.place-holder {
+    background: url('../ProductDesignLandingPage.svg') no-repeat;
+    width: 69px;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+.place-holder.ui-design {
+    background-position: -69px -114px;
+}
+
+.place-holder.product-design {
+    background-position: -447px -125px;
+}
+
+.place-holder.branding {
+    background-position: -835px -126px;
+}
+
+.arrow svg {
+    width: 16px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.our-task,
+.experiences {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    column-gap: 20px;
+}
+
+.our-task .card {
+    background-color: #c91b28;
+    padding: 40px;
+}
+
+.our-task .card:nth-of-type(odd) {
+    background-color: #1e1e1e;
+}
+
+.cta-btn {
+    color: #fff;
+}
+
+.our-task .card:nth-of-type(odd) .cta-btn {
+    color: #ff3343;
+}
+
+.our-task .card:nth-of-type(odd) .cta-btn path {
+    fill: #ff3343;
+}
+
+.cta-btn path {
+    fill: #fff;
+}
+
+
+
+.task-name {
+    font-size: 30px;
+}
+
+.task-name+p {
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.sub-card {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+
+}
+
+.experiences {
+    align-items: center;
+    text-align: center;
+}
+
+.experiences .tenure {
+    font-size: 100px;
+    color: #ef4040;
+}
+
+.experiences .tenure+*,
+.projects .section-title h2 {
+    font-size: 30px;
+}
+
+.sub-card .card {
+    background-color: #1e1e1e;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.sub-card .number {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ef4040;
+}
+
+.projects .section-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .section-title p {
+    margin-top: 1rem;
+}
+
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.section-card {
+    margin: 40px 0 20px;
+}
+
+.projects .section-cards .figure {
+    background-color: #1e1e1e;
+    padding: 70px 20px;
+}
+
+.projects .proj-name {
+    font-size: 26px;
+    margin: 30px 0px 10px;
+}
+
+.projects .proj-name+.cta-btn {
+    font-weight: bold;
+    color: #ef4040;
+}
+
+.projects .figure img {
+    height: 294px;
+    width: 100%;
+}
+
+.invite-offer {
+    background-color: #1e1e1e;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 60px 0;
+}
+
+.invite-title h2 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.invite-button {
+    justify-self: center;
+    align-self: center;
+}
+
+footer .menu-items {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    column-gap: 30px;
+}
+
+footer .menu-items a {
+    color: #fff;
+}
+
+footer .ribbon {
+    background-color: #1e1e1e;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ribbon .wrapper {
+    display: grid;
+    grid-template-columns: 2.5fr 3fr;
+    padding-bottom: 30px;
+}
+
+.social-media li {
+    display: inline-block;
+}
+
+.social-media li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social-media a {
+    background: url('../ProductDesignLandingPage.svg') no-repeat;
+    width: 28px;
+    height: 21px;
+    display: inline-block;
+}
+
+.social-media a:not(:last-child) {
+    margin-right: 10px
+}
+
+.social-media a#fb {
+    background-position: -65px 0
+}
+
+.social-media a#twitter {
+    background-position: -129px 0
+}
+
+.social-media a#fb {
+    background-position: -416px -339px;
+}
+
+.social-media a#twitter {
+    background-position: -483px -339px;
+}
+
+.social-media a#y-tube {
+    background-position: -559px -339px;
+}
