@@ -382,3 +382,49 @@ footer .ribbon {
 .social-media a#y-tube {
     background-position: -559px -339px;
 }
+
+@media (max-width:991px) {
+
+    .default-padding,
+    .default-padding-two {
+        padding: 20px 10px 0;
+    }
+
+    navbar,
+    .border-wrap,
+    .main-menu ul,
+    .hero-welcome,
+    .our-task,
+    .experiences,
+    projects,
+    .section-title,
+    .section-cards,
+    .invite-offer,
+    footer .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px
+    }
+
+    .experiences {
+        flex-direction:
+            initial;
+        justify-content: space-evenly;
+    }
+
+    .border-wrap {
+        padding-bottom: 10px
+    }
+
+    .invite-offer,
+    footer .menu-items {
+        padding: 10px
+    }
+
+    navbar {
+        box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5);
+    }
+}
